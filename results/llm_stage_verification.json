@@ -1,0 +1,890 @@
+{
+ "runs": {
+  "run1": {
+   "table2_values_compared": 40,
+   "table2_values_equal": 40,
+   "table2_mismatch": [],
+   "counts_compared": 18,
+   "counts_equal": 18,
+   "wall_clock_s": 698,
+   "data_quality_findings_n": 18,
+   "anomaly_candidates_n": 10,
+   "model_self_report": "claude-opus-5-5 (Opus 5.5)",
+   "narrative_words": 396
+  },
+  "run2": {
+   "table2_values_compared": 40,
+   "table2_values_equal": 40,
+   "table2_mismatch": [],
+   "counts_compared": 18,
+   "counts_equal": 18,
+   "wall_clock_s": 635,
+   "data_quality_findings_n": 16,
+   "anomaly_candidates_n": 13,
+   "model_self_report": "Opus 5.5 (model ID: claude-opus-5-5)",
+   "narrative_words": 396
+  },
+  "run3": {
+   "table2_values_compared": 40,
+   "table2_values_equal": 40,
+   "table2_mismatch": [],
+   "counts_compared": 18,
+   "counts_equal": 18,
+   "wall_clock_s": 506,
+   "data_quality_findings_n": 17,
+   "anomaly_candidates_n": 9,
+   "model_self_report": "claude-opus-5-5",
+   "narrative_words": 398
+  }
+ },
+ "independent_recomputation": {
+  "5G_records_SNR_missing": 7,
+  "...whose_Level_Qual_equal_own_LTE_anchor": 6,
+  "...immediately_followed_by_4G_record": 7,
+  "4G_records_directly_before_a_5G_record": 25,
+  "...carrying_Level_Qual_of_that_5G_record": 12,
+  "NR_RSRP_without_the_7": {
+   "n": 214,
+   "mean": -99.4393,
+   "median": -98.0,
+   "poor_pct": 14.486
+  },
+  "LTE_RSRP_without_the_12": {
+   "n": 414,
+   "mean": -92.7488
+  },
+  "triplet_equals_previous_record_pct": {
+   "5G": 38.9,
+   "4G": 32.5
+  },
+  "triplet_repeat_within_consecutive_same_label_pairs_pct": {
+   "5G": 44.1,
+   "4G": 37.0
+  },
+  "first_background_record": "2026.10.02_12.20.49",
+  "records_before_first_background_record": 254,
+  "...as_pct_of_records": 59.5,
+  "...elapsed_s": 271.0,
+  "...as_pct_of_duration": 14.3,
+  "records_sharing_timestamp_with_previous": 74,
+  "rat_label_flips": 50,
+  "...on_unchanged_node_and_cell": 50,
+  "5G_to_4G_flips": 25,
+  "...preceded_by_valid_NR_RSRP_ge_-110": 20,
+  "...first_4G_record_idle": 24,
+  "poor_NR_RSRP_total": 31,
+  "poor_NR_RSRP_in_12:19:17-12:20:38": 22,
+  "5G_records_in_that_interval": 40,
+  "interval_12:19:17-12:20:29": {
+   "records": 58,
+   "5G_records": 39,
+   "NR_RSRP_median": -112.0,
+   "NR_RSRP_poor_pct": 53.8,
+   "NR_SINR_median": 0.0,
+   "LTE_RSRP_median": -97.0,
+   "events": 8
+  },
+  "interval_12:34:05-12:34:10": {
+   "5G_records": 6,
+   "NR_RSRP_poor": 6,
+   "NR_RSRP_median": -113.0,
+   "NR_SINR_median": -4.0
+  },
+  "NR_SINR_poor_pct_when_RSRP_poor": 48.4,
+  "NR_SINR_poor_pct_when_RSRP_not_poor": 6.0,
+  "NR_RSRP_poor_and_SINR_poor_n": 15,
+  "poor_LTE_SINR_n": 57,
+  "...with_RSRP_ge_-110": 55,
+  "pearson_NR_RSRP_SINR": 0.7,
+  "spearman_NR_RSRP_SINR": 0.72,
+  "spearman_NR_RSRQ_SINR": 0.94,
+  "median_NR_minus_LTE_anchor_RSRP_dB": -6.0,
+  "time_share_hold_capped_10s": [
+   {
+    "4G": 65.0,
+    "5G": 35.0
+   },
+   958.0
+  ],
+  "time_share_intervals_gt10s_dropped": [
+   {
+    "4G": 49.8,
+    "5G": 50.2
+   },
+   528.0
+  ],
+  "time_share_intervals_gt30s_dropped": [
+   {
+    "4G": 64.4,
+    "5G": 35.6
+   },
+   970.0
+  ],
+  "time_share_no_rule": [
+   {
+    "4G": 80.1,
+    "5G": 19.9
+   },
+   1895.0
+  ],
+  "intervals_gt10s": {
+   "n": 43,
+   "sum_s": 1367.0,
+   "pct_of_duration": 72.1
+  },
+  "immediate_reversals": {
+   "all": 28,
+   "within_10s": 18,
+   "within_30s": 26
+  },
+  "events_4G4G": 50,
+  "events_5G5G": 11,
+  "events_IRAT": 18,
+  "events_file_equals_main_log_EVENT_column": true,
+  "events_with_FOREGROUND_false": 60,
+  "events_with_logged_speed_0": 52,
+  "events_on_stale_position_records_reference_rule": 55,
+  "5G_records_identity_equals_anchor": 220,
+  "SNR_exact_zero_in_valid_NR_SINR": 32,
+  "IRAT_events_between_records_of_same_label": 17,
+  "4G_records_LTERSSI_not_above_RSRP": 135,
+  "CQI_missing_marker": 137,
+  "CQI_equal_6": 73,
+  "events_same_node": 33,
+  "events_change_arfcn": 18,
+  "bw100_by_label": {
+   "5G": 142,
+   "4G": 88
+  },
+  "frozen_run_12:20:29": {
+   "records": 21,
+   "last": "2026.10.02_12.27.07",
+   "background": 18,
+   "next_fix": "2026.10.02_12.28.07",
+   "jump_m": 3418.0,
+   "gap_s": 60.0
+  },
+  "state_D_share_pct": {
+   "5G": 50.2,
+   "4G": 21.8
+  }
+ },
+ "narrative_claims_checked": 91,
+ "narrative_claims_reproduced": 91,
+ "narrative_claims_not_reproduced": [],
+ "narrative_claim_table": [
+  {
+   "claim": "5G-labelled records with missing SNR",
+   "runs": "1,2,3",
+   "claimed": 7,
+   "recomputed": 7,
+   "equal": true
+  },
+  {
+   "claim": "... of which Level/Qual equal the record's own LTE anchor",
+   "runs": "1,2,3",
+   "claimed": 6,
+   "recomputed": 6,
+   "equal": true
+  },
+  {
+   "claim": "... each immediately followed by a 4G record",
+   "runs": "1",
+   "claimed": 7,
+   "recomputed": 7,
+   "equal": true
+  },
+  {
+   "claim": "4G records directly preceding a 5G record",
+   "runs": "1,3",
+   "claimed": 25,
+   "recomputed": 25,
+   "equal": true
+  },
+  {
+   "claim": "... carrying that 5G record's Level/Qual",
+   "runs": "1,2,3",
+   "claimed": 12,
+   "recomputed": 12,
+   "equal": true
+  },
+  {
+   "claim": "NR SS-RSRP mean without the 7 (dBm)",
+   "runs": "1,2,3",
+   "claimed": -99.44,
+   "recomputed": -99.4393,
+   "equal": true
+  },
+  {
+   "claim": "NR SS-RSRP poor share without the 7 (%)",
+   "runs": "3",
+   "claimed": 14.49,
+   "recomputed": 14.486,
+   "equal": true
+  },
+  {
+   "claim": "LTE RSRP mean without the 12 (dBm)",
+   "runs": "1,2,3",
+   "claimed": -92.75,
+   "recomputed": -92.7488,
+   "equal": true
+  },
+  {
+   "claim": "triplet equals previous record, 5G (%)",
+   "runs": "1",
+   "claimed": 38.9,
+   "recomputed": 38.9,
+   "equal": true
+  },
+  {
+   "claim": "triplet equals previous record, 4G (%)",
+   "runs": "1",
+   "claimed": 32.5,
+   "recomputed": 32.5,
+   "equal": true
+  },
+  {
+   "claim": "triplet repeats in consecutive 5G pairs (%)",
+   "runs": "2,3",
+   "claimed": 44.1,
+   "recomputed": 44.1,
+   "equal": true
+  },
+  {
+   "claim": "triplet repeats in consecutive 4G pairs (%)",
+   "runs": "2,3",
+   "claimed": 37.0,
+   "recomputed": 37.0,
+   "equal": true
+  },
+  {
+   "claim": "first background record",
+   "runs": "1,2",
+   "claimed": "2026.10.02_12.20.49",
+   "recomputed": "2026.10.02_12.20.49",
+   "equal": true
+  },
+  {
+   "claim": "records before it",
+   "runs": "2",
+   "claimed": 254,
+   "recomputed": 254,
+   "equal": true
+  },
+  {
+   "claim": "... share of records (%)",
+   "runs": "1,2",
+   "claimed": 59.5,
+   "recomputed": 59.5,
+   "equal": true
+  },
+  {
+   "claim": "... elapsed time (s)",
+   "runs": "1,2",
+   "claimed": 271.0,
+   "recomputed": 271.0,
+   "equal": true
+  },
+  {
+   "claim": "... share of duration (%)",
+   "runs": "1,2",
+   "claimed": 14.3,
+   "recomputed": 14.3,
+   "equal": true
+  },
+  {
+   "claim": "records sharing a timestamp with the previous one",
+   "runs": "1,3",
+   "claimed": 74,
+   "recomputed": 74,
+   "equal": true
+  },
+  {
+   "claim": "RAT label flips",
+   "runs": "1",
+   "claimed": 50,
+   "recomputed": 50,
+   "equal": true
+  },
+  {
+   "claim": "... on unchanged node and cell",
+   "runs": "1",
+   "claimed": 50,
+   "recomputed": 50,
+   "equal": true
+  },
+  {
+   "claim": "5G-to-4G flips",
+   "runs": "1",
+   "claimed": 25,
+   "recomputed": 25,
+   "equal": true
+  },
+  {
+   "claim": "... preceded by NR SS-RSRP >= -110 dBm",
+   "runs": "1",
+   "claimed": 20,
+   "recomputed": 20,
+   "equal": true
+  },
+  {
+   "claim": "... first 4G record idle",
+   "runs": "1",
+   "claimed": 24,
+   "recomputed": 24,
+   "equal": true
+  },
+  {
+   "claim": "poor NR SS-RSRP samples in 12:19:17-12:20:38",
+   "runs": "2",
+   "claimed": 22,
+   "recomputed": 22,
+   "equal": true
+  },
+  {
+   "claim": "5G records in that interval",
+   "runs": "2",
+   "claimed": 40,
+   "recomputed": 40,
+   "equal": true
+  },
+  {
+   "claim": "12:19:17-12:20:29 records",
+   "runs": "1",
+   "claimed": 58,
+   "recomputed": 58,
+   "equal": true
+  },
+  {
+   "claim": "12:19:17-12:20:29 5G records",
+   "runs": "1",
+   "claimed": 39,
+   "recomputed": 39,
+   "equal": true
+  },
+  {
+   "claim": "12:19:17-12:20:29 NR SS-RSRP median (dBm)",
+   "runs": "1",
+   "claimed": -112.0,
+   "recomputed": -112.0,
+   "equal": true
+  },
+  {
+   "claim": "12:19:17-12:20:29 NR SS-RSRP poor (%)",
+   "runs": "1",
+   "claimed": 53.8,
+   "recomputed": 53.8,
+   "equal": true
+  },
+  {
+   "claim": "12:19:17-12:20:29 NR SS-SINR median (dB)",
+   "runs": "1",
+   "claimed": 0.0,
+   "recomputed": 0.0,
+   "equal": true
+  },
+  {
+   "claim": "12:19:17-12:20:29 LTE RSRP median (dBm)",
+   "runs": "1",
+   "claimed": -97.0,
+   "recomputed": -97.0,
+   "equal": true
+  },
+  {
+   "claim": "12:19:17-12:20:29 events",
+   "runs": "1,2",
+   "claimed": 8,
+   "recomputed": 8,
+   "equal": true
+  },
+  {
+   "claim": "12:34:05-12:34:10 5G records",
+   "runs": "1,2",
+   "claimed": 6,
+   "recomputed": 6,
+   "equal": true
+  },
+  {
+   "claim": "12:34:05-12:34:10 poor NR SS-RSRP",
+   "runs": "1,2",
+   "claimed": 6,
+   "recomputed": 6,
+   "equal": true
+  },
+  {
+   "claim": "12:34:05-12:34:10 NR SS-RSRP median (dBm)",
+   "runs": "1,2",
+   "claimed": -113.0,
+   "recomputed": -113.0,
+   "equal": true
+  },
+  {
+   "claim": "12:34:05-12:34:10 NR SS-SINR median (dB)",
+   "runs": "1,2",
+   "claimed": -4.0,
+   "recomputed": -4.0,
+   "equal": true
+  },
+  {
+   "claim": "NR SINR poor when RSRP poor (%)",
+   "runs": "2",
+   "claimed": 48.4,
+   "recomputed": 48.4,
+   "equal": true
+  },
+  {
+   "claim": "NR SINR poor when RSRP not poor (%)",
+   "runs": "2",
+   "claimed": 6.0,
+   "recomputed": 6.0,
+   "equal": true
+  },
+  {
+   "claim": "NR RSRP poor and SINR poor (records)",
+   "runs": "1",
+   "claimed": 15,
+   "recomputed": 15,
+   "equal": true
+  },
+  {
+   "claim": "poor LTE SINR samples",
+   "runs": "1,2",
+   "claimed": 57,
+   "recomputed": 57,
+   "equal": true
+  },
+  {
+   "claim": "... with RSRP >= -110 dBm",
+   "runs": "2",
+   "claimed": 55,
+   "recomputed": 55,
+   "equal": true
+  },
+  {
+   "claim": "Spearman NR RSRP-SINR",
+   "runs": "1",
+   "claimed": 0.72,
+   "recomputed": 0.72,
+   "equal": true
+  },
+  {
+   "claim": "Pearson NR RSRP-SINR",
+   "runs": "3",
+   "claimed": 0.7,
+   "recomputed": 0.7,
+   "equal": true
+  },
+  {
+   "claim": "Spearman NR RSRQ-SINR",
+   "runs": "1",
+   "claimed": 0.94,
+   "recomputed": 0.94,
+   "equal": true
+  },
+  {
+   "claim": "Spearman LTE RSRP-SINR",
+   "runs": "1",
+   "claimed": 0.52,
+   "recomputed": 0.52,
+   "equal": true
+  },
+  {
+   "claim": "Spearman NR RSRP vs anchor RSRP",
+   "runs": "1",
+   "claimed": 0.61,
+   "recomputed": 0.61,
+   "equal": true
+  },
+  {
+   "claim": "median NR minus anchor RSRP (dB)",
+   "runs": "1",
+   "claimed": -6.0,
+   "recomputed": -6.0,
+   "equal": true
+  },
+  {
+   "claim": "time share 5G, hold capped at 10 s (% of observed)",
+   "runs": "3",
+   "claimed": 35.0,
+   "recomputed": 35.0,
+   "equal": true
+  },
+  {
+   "claim": "observed time, hold capped at 10 s (s)",
+   "runs": "3",
+   "claimed": 958.0,
+   "recomputed": 958.0,
+   "equal": true
+  },
+  {
+   "claim": "time share 5G, hold capped at 10 s (% of total)",
+   "runs": "1",
+   "claimed": 17.7,
+   "recomputed": 17.7,
+   "equal": true
+  },
+  {
+   "claim": "time share 4G, hold capped at 10 s (% of total)",
+   "runs": "1",
+   "claimed": 32.9,
+   "recomputed": 32.9,
+   "equal": true
+  },
+  {
+   "claim": "unobserved time, hold capped at 10 s (%)",
+   "runs": "1",
+   "claimed": 49.4,
+   "recomputed": 49.4,
+   "equal": true
+  },
+  {
+   "claim": "time share 5G, intervals > 10 s dropped (%)",
+   "runs": "2",
+   "claimed": 50.2,
+   "recomputed": 50.2,
+   "equal": true
+  },
+  {
+   "claim": "observed time, intervals > 10 s dropped (s)",
+   "runs": "2",
+   "claimed": 528.0,
+   "recomputed": 528.0,
+   "equal": true
+  },
+  {
+   "claim": "intervals > 10 s",
+   "runs": "2,3",
+   "claimed": 43,
+   "recomputed": 43,
+   "equal": true
+  },
+  {
+   "claim": "... share of duration (%)",
+   "runs": "2",
+   "claimed": 72.1,
+   "recomputed": 72.1,
+   "equal": true
+  },
+  {
+   "claim": "immediate reversals (any delay)",
+   "runs": "1,2,3",
+   "claimed": 28,
+   "recomputed": 28,
+   "equal": true
+  },
+  {
+   "claim": "... within 10 s",
+   "runs": "1,3",
+   "claimed": 18,
+   "recomputed": 18,
+   "equal": true
+  },
+  {
+   "claim": "... within 30 s",
+   "runs": "1",
+   "claimed": 26,
+   "recomputed": 26,
+   "equal": true
+  },
+  {
+   "claim": "events crossing the two operator codes",
+   "runs": "1,2,3",
+   "claimed": 36,
+   "recomputed": 36,
+   "equal": true
+  },
+  {
+   "claim": "events 4G4G / 5G5G / IRAT",
+   "runs": "3",
+   "claimed": [
+    50,
+    11,
+    18
+   ],
+   "recomputed": [
+    50,
+    11,
+    18
+   ],
+   "equal": true
+  },
+  {
+   "claim": "reselection-type / handover-type events",
+   "runs": "1",
+   "claimed": [
+    61,
+    18
+   ],
+   "recomputed": [
+    61,
+    18
+   ],
+   "equal": true
+  },
+  {
+   "claim": "events with identical source and target cell identity",
+   "runs": "1,3",
+   "claimed": 3,
+   "recomputed": 3,
+   "equal": true
+  },
+  {
+   "claim": "events file identical to main-log EVENT column",
+   "runs": "1,2,3",
+   "claimed": true,
+   "recomputed": true,
+   "equal": true
+  },
+  {
+   "claim": "events logged with FOREGROUND=false",
+   "runs": "1,2",
+   "claimed": 60,
+   "recomputed": 60,
+   "equal": true
+  },
+  {
+   "claim": "events logged with Speed 0",
+   "runs": "1,2",
+   "claimed": 52,
+   "recomputed": 52,
+   "equal": true
+  },
+  {
+   "claim": "IRAT-type events between records of the same label",
+   "runs": "1",
+   "claimed": 17,
+   "recomputed": 17,
+   "equal": true
+  },
+  {
+   "claim": "events staying on the same node",
+   "runs": "1",
+   "claimed": 33,
+   "recomputed": 33,
+   "equal": true
+  },
+  {
+   "claim": "events changing ARFCN",
+   "runs": "1",
+   "claimed": 18,
+   "recomputed": 18,
+   "equal": true
+  },
+  {
+   "claim": "5G records whose identity equals the anchor fields",
+   "runs": "1,2,3",
+   "claimed": 220,
+   "recomputed": 220,
+   "equal": true
+  },
+  {
+   "claim": "NR SINR exactly 0.0 dB",
+   "runs": "2",
+   "claimed": 32,
+   "recomputed": 32,
+   "equal": true
+  },
+  {
+   "claim": "LTE-only SNR exactly 0.0 dB",
+   "runs": "1",
+   "claimed": 31,
+   "recomputed": 31,
+   "equal": true
+  },
+  {
+   "claim": "LTE-only SNR below 0 dB",
+   "runs": "1,2",
+   "claimed": 0,
+   "recomputed": 0,
+   "equal": true
+  },
+  {
+   "claim": "4G records with LTERSSI not above RSRP",
+   "runs": "1,2,3",
+   "claimed": 135,
+   "recomputed": 135,
+   "equal": true
+  },
+  {
+   "claim": "CQI '-' / CQI = 6",
+   "runs": "1",
+   "claimed": [
+    137,
+    73
+   ],
+   "recomputed": [
+    137,
+    73
+   ],
+   "equal": true
+  },
+  {
+   "claim": "100 MHz bandwidth entry in 5G / 4G records",
+   "runs": "1",
+   "claimed": [
+    142,
+    88
+   ],
+   "recomputed": [
+    142,
+    88
+   ],
+   "equal": true
+  },
+  {
+   "claim": "frozen run from 12:20:29: records",
+   "runs": "1,2,3",
+   "claimed": 21,
+   "recomputed": 21,
+   "equal": true
+  },
+  {
+   "claim": "... of which background",
+   "runs": "1,2",
+   "claimed": 18,
+   "recomputed": 18,
+   "equal": true
+  },
+  {
+   "claim": "... jump to next fix (m)",
+   "runs": "1,2,3",
+   "claimed": 3418.0,
+   "recomputed": 3418.0,
+   "equal": true
+  },
+  {
+   "claim": "... after (s)",
+   "runs": "1,2,3",
+   "claimed": 60.0,
+   "recomputed": 60.0,
+   "equal": true
+  },
+  {
+   "claim": "State D share, 5G / 4G records (%)",
+   "runs": "1",
+   "claimed": [
+    50.2,
+    21.8
+   ],
+   "recomputed": [
+    50.2,
+    21.8
+   ],
+   "equal": true
+  },
+  {
+   "claim": "passive DL / UL bitrate non-zero records",
+   "runs": "2,3",
+   "claimed": [
+    114,
+    112
+   ],
+   "recomputed": [
+    114,
+    112
+   ],
+   "equal": true
+  },
+  {
+   "claim": "band shares L7 / L20 / L3 (%)",
+   "runs": "1,2,3",
+   "claimed": [
+    66.0,
+    17.6,
+    16.4
+   ],
+   "recomputed": [
+    66.0,
+    17.6,
+    16.4
+   ],
+   "equal": true
+  },
+  {
+   "claim": "NR RSRP good / acceptable (%)",
+   "runs": "1,2",
+   "claimed": [
+    3.6,
+    82.4
+   ],
+   "recomputed": [
+    3.6199,
+    82.3529
+   ],
+   "equal": true
+  },
+  {
+   "claim": "NR SINR good / acceptable (%)",
+   "runs": "1,2",
+   "claimed": [
+    22.4,
+    65.4
+   ],
+   "recomputed": [
+    22.4299,
+    65.4206
+   ],
+   "equal": true
+  },
+  {
+   "claim": "LTE RSRP good / acceptable (%)",
+   "runs": "1,2",
+   "claimed": [
+    21.6,
+    76.8
+   ],
+   "recomputed": [
+    21.5962,
+    76.7606
+   ],
+   "equal": true
+  },
+  {
+   "claim": "LTE SINR good / acceptable (%)",
+   "runs": "1,2",
+   "claimed": [
+    20.7,
+    66.0
+   ],
+   "recomputed": [
+    20.6573,
+    65.9624
+   ],
+   "equal": true
+  },
+  {
+   "claim": "12:19:13-12:20:29 NR samples",
+   "runs": "3",
+   "claimed": 44,
+   "recomputed": 44,
+   "equal": true
+  },
+  {
+   "claim": "12:19:13-12:20:29 poor NR SS-RSRP",
+   "runs": "3",
+   "claimed": 21,
+   "recomputed": 21,
+   "equal": true
+  },
+  {
+   "claim": "12:19:13-12:20:29 NR SS-RSRP median (dBm)",
+   "runs": "3",
+   "claimed": -110.0,
+   "recomputed": -110.0,
+   "equal": true
+  },
+  {
+   "claim": "NetworkTypeNum = 13 in all records",
+   "runs": "2,3",
+   "claimed": 427,
+   "recomputed": 427,
+   "equal": true
+  }
+ ],
+ "stale_position_records": {
+  "run1": 63,
+  "run2": 64,
+  "run3": 63,
+  "reference_rule": 75
+ }
+}

@@ -1,0 +1,1290 @@
+{
+ "parsing": {
+  "header_columns": 271,
+  "header_trailing_empty_column": true,
+  "core_columns_before_neighbour_blocks": 90,
+  "row_field_count_distribution": {
+   "91": 112,
+   "101": 98,
+   "111": 62,
+   "121": 85,
+   "131": 38,
+   "141": 24,
+   "151": 8
+  },
+  "rows_longer_than_header": 0,
+  "rows_shorter_than_core": 0,
+  "exact_duplicate_rows": 0
+ },
+ "timestamps": {
+  "first": "2026.10.02_12.16.18",
+  "last": "2026.10.02_12.47.53",
+  "duration_s": 1895.0,
+  "unparseable": 0,
+  "backward_steps": 0,
+  "unique_timestamps": 353,
+  "records_sharing_second_with_previous": 74,
+  "gap_s": {
+   "median": 1.0,
+   "p95": 23.0,
+   "max": 93.0,
+   "n_gt_cap": 43,
+   "n_gt_30s": 17
+  },
+  "mean_record_rate_per_s": 0.2253
+ },
+ "table_II": {
+  "NR_SS_RSRP": {
+   "raw_n": 221,
+   "missing_marker_n": 0,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 221,
+   "mean": -99.0679,
+   "median": -98.0,
+   "sd": 9.5665,
+   "p5": -114.0,
+   "p95": -85.0,
+   "min": -121.0,
+   "max": -68.0,
+   "poor_n": 31,
+   "acceptable_n": 182,
+   "good_n": 8,
+   "poor_pct": 14.0271,
+   "acceptable_pct": 82.3529,
+   "good_pct": 3.6199
+  },
+  "NR_SS_RSRQ": {
+   "raw_n": 221,
+   "missing_marker_n": 0,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 221,
+   "mean": -12.4208,
+   "median": -12.0,
+   "sd": 1.7912,
+   "p5": -16.0,
+   "p95": -10.0,
+   "min": -18.0,
+   "max": -7.0,
+   "poor_pct": null,
+   "acceptable_pct": null,
+   "good_pct": null
+  },
+  "NR_SS_SINR": {
+   "raw_n": 221,
+   "missing_marker_n": 7,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 214,
+   "mean": 5.2757,
+   "median": 4.5,
+   "sd": 6.1479,
+   "p5": -3.0,
+   "p95": 17.0,
+   "min": -7.0,
+   "max": 19.0,
+   "poor_n": 26,
+   "acceptable_n": 140,
+   "good_n": 48,
+   "poor_pct": 12.1495,
+   "acceptable_pct": 65.4206,
+   "good_pct": 22.4299
+  },
+  "LTE_RSRP": {
+   "raw_n": 427,
+   "missing_marker_n": 1,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 426,
+   "mean": -92.8451,
+   "median": -95.0,
+   "sd": 10.9755,
+   "p5": -109.0,
+   "p95": -71.0,
+   "min": -121.0,
+   "max": -63.0,
+   "poor_n": 7,
+   "acceptable_n": 327,
+   "good_n": 92,
+   "poor_pct": 1.6432,
+   "acceptable_pct": 76.7606,
+   "good_pct": 21.5962
+  },
+  "LTE_RSRQ": {
+   "raw_n": 427,
+   "missing_marker_n": 1,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 426,
+   "mean": -12.0962,
+   "median": -12.0,
+   "sd": 3.1132,
+   "p5": -17.0,
+   "p95": -7.0,
+   "min": -20.0,
+   "max": -7.0,
+   "poor_pct": null,
+   "acceptable_pct": null,
+   "good_pct": null
+  },
+  "LTE_SINR": {
+   "raw_n": 427,
+   "missing_marker_n": 1,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 426,
+   "mean": 4.9765,
+   "median": 4.0,
+   "sd": 6.8365,
+   "p5": -6.0,
+   "p95": 17.0,
+   "min": -19.0,
+   "max": 25.0,
+   "poor_n": 57,
+   "acceptable_n": 281,
+   "good_n": 88,
+   "poor_pct": 13.3803,
+   "acceptable_pct": 65.9624,
+   "good_pct": 20.6573
+  }
+ },
+ "table_II_definitions": {
+  "sd": "sample SD (ddof=1)",
+  "percentiles": "numpy.percentile method=linear (Hyndman-Fan type 7)",
+  "poor": "RSRP < -110 dBm ; SINR < 0 dB (strict)",
+  "good": "RSRP > -85 dBm ; SINR > 10 dB (strict)",
+  "acceptable": "boundaries -110, -85, 0 and 10 inclusive",
+  "RSRQ": "descriptive only, no category",
+  "validity": "numeric, not a missing marker (empty or -), not -201, inside 3GPP reporting range"
+ },
+ "lte_pool_composition": {
+  "from_4G_records_Level": 206,
+  "from_5G_records_SecondCell_RSRP": 220,
+  "5G_records_without_anchor_values": 1,
+  "4G_records_with_SecondCell_values_present_not_used": 1,
+  "LTE_RSRP_by_source": {
+   "4G_records": {
+    "n": 206,
+    "mean": -93.3738,
+    "median": -94.0,
+    "min": -121.0,
+    "poor_pct": 0.9709
+   },
+   "5G_anchor": {
+    "n": 220,
+    "mean": -92.35,
+    "median": -95.0,
+    "min": -114.0,
+    "poor_pct": 2.2727
+   }
+  },
+  "LTE_SINR_by_source": {
+   "4G_records": {
+    "n": 206,
+    "mean": 5.7767,
+    "median": 4.0,
+    "min": 0.0,
+    "poor_pct": 0.0
+   },
+   "5G_anchor": {
+    "n": 220,
+    "mean": 4.2273,
+    "median": 4.0,
+    "min": -19.0,
+    "poor_pct": 25.9091
+   }
+  }
+ },
+ "rat_label_flips": {
+  "total": 50,
+  "4G_to_5G": 25,
+  "5G_to_4G": 25,
+  "flips_on_same_node_and_cell": 50,
+  "label_runs": 51,
+  "median_run_records": 5.0,
+  "flips_per_minute": 1.5831
+ },
+ "mixed_field_records_at_label_change": {
+  "5G_records_with_SNR_missing": 7,
+  "of_which_Level_and_Qual_equal_own_LTE_anchor": 6,
+  "of_which_no_anchor_but_equal_next_4G_record": 1,
+  "of_which_immediately_followed_by_4G_record": 7,
+  "timestamps_5G": [
+   "2026.10.02_12.16.31",
+   "2026.10.02_12.16.39",
+   "2026.10.02_12.17.22",
+   "2026.10.02_12.17.42",
+   "2026.10.02_12.18.14",
+   "2026.10.02_12.19.25",
+   "2026.10.02_12.37.02"
+  ],
+  "4G_records_directly_before_a_5G_record": 25,
+  "of_which_Level_and_Qual_equal_next_5G_record_NR_values": 12,
+  "of_those_where_LTE_Level_differs_from_next_5G_anchor_RSRP": 12,
+  "timestamps_4G": [
+   "2026.10.02_12.16.21",
+   "2026.10.02_12.16.35",
+   "2026.10.02_12.16.43",
+   "2026.10.02_12.17.02",
+   "2026.10.02_12.17.32",
+   "2026.10.02_12.17.53",
+   "2026.10.02_12.18.27",
+   "2026.10.02_12.31.40",
+   "2026.10.02_12.33.53",
+   "2026.10.02_12.34.14",
+   "2026.10.02_12.35.11",
+   "2026.10.02_12.37.03"
+  ]
+ },
+ "table_II_sensitivity_excluding_mixed_field_records": {
+  "NR_SS_RSRP": {
+   "raw_n": 214,
+   "missing_marker_n": 0,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 214,
+   "mean": -99.4393,
+   "median": -98.0,
+   "sd": 9.1863,
+   "p5": -114.0,
+   "p95": -85.0,
+   "min": -121.0,
+   "max": -82.0,
+   "poor_n": 31,
+   "acceptable_n": 178,
+   "good_n": 5,
+   "poor_pct": 14.486,
+   "acceptable_pct": 83.1776,
+   "good_pct": 2.3364
+  },
+  "NR_SS_RSRQ": {
+   "raw_n": 214,
+   "missing_marker_n": 0,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 214,
+   "mean": -12.4813,
+   "median": -12.0,
+   "sd": 1.697,
+   "p5": -16.0,
+   "p95": -11.0,
+   "min": -18.0,
+   "max": -10.0,
+   "poor_pct": null,
+   "acceptable_pct": null,
+   "good_pct": null
+  },
+  "NR_SS_SINR": {
+   "raw_n": 214,
+   "missing_marker_n": 0,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 214,
+   "mean": 5.2757,
+   "median": 4.5,
+   "sd": 6.1479,
+   "p5": -3.0,
+   "p95": 17.0,
+   "min": -7.0,
+   "max": 19.0,
+   "poor_n": 26,
+   "acceptable_n": 140,
+   "good_n": 48,
+   "poor_pct": 12.1495,
+   "acceptable_pct": 65.4206,
+   "good_pct": 22.4299
+  },
+  "LTE_RSRP": {
+   "raw_n": 415,
+   "missing_marker_n": 1,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 414,
+   "mean": -92.7488,
+   "median": -95.0,
+   "sd": 11.0421,
+   "p5": -109.0,
+   "p95": -71.0,
+   "min": -121.0,
+   "max": -63.0,
+   "poor_n": 7,
+   "acceptable_n": 316,
+   "good_n": 91,
+   "poor_pct": 1.6908,
+   "acceptable_pct": 76.3285,
+   "good_pct": 21.9807
+  },
+  "LTE_RSRQ": {
+   "raw_n": 415,
+   "missing_marker_n": 1,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 414,
+   "mean": -12.1039,
+   "median": -12.0,
+   "sd": 3.1494,
+   "p5": -17.0,
+   "p95": -7.0,
+   "min": -20.0,
+   "max": -7.0,
+   "poor_pct": null,
+   "acceptable_pct": null,
+   "good_pct": null
+  },
+  "LTE_SINR": {
+   "raw_n": 427,
+   "missing_marker_n": 1,
+   "non_numeric_n": 0,
+   "loss_code_n": 0,
+   "out_of_range_n": 0,
+   "valid_n": 426,
+   "mean": 4.9765,
+   "median": 4.0,
+   "sd": 6.8365,
+   "p5": -6.0,
+   "p95": 17.0,
+   "min": -19.0,
+   "max": 25.0,
+   "poor_n": 57,
+   "acceptable_n": 281,
+   "good_n": 88,
+   "poor_pct": 13.3803,
+   "acceptable_pct": 65.9624,
+   "good_pct": 20.6573
+  }
+ },
+ "repeated_readings": {
+  "5G_records_NR_triplet_identical_to_previous_record": {
+   "n": 86,
+   "of": 221,
+   "pct": 38.914
+  },
+  "4G_records_LTE_triplet_identical_to_previous_record": {
+   "n": 67,
+   "of": 206,
+   "pct": 32.5243
+  },
+  "5G_records_anchor_triplet_identical_to_previous_record": {
+   "n": 90,
+   "of": 221,
+   "pct": 40.724
+  }
+ },
+ "lte_snr_floor_check": {
+  "4G_records_SNR_min": 0.0,
+  "4G_records_SNR_eq_0": 31,
+  "4G_records_SNR_lt_0": 0,
+  "4G_records_n": 206,
+  "5G_anchor_SNR_min": -19.0,
+  "5G_anchor_SNR_eq_0": 5,
+  "5G_anchor_SNR_lt_0": 57,
+  "5G_anchor_n": 220,
+  "NR_SINR_eq_0": 32,
+  "NR_SINR_lt_0": 26
+ },
+ "lte_rssi_consistency": {
+  "4G_records_with_RSSI": 206,
+  "RSSI_minus_RSRP_dB": {
+   "median": 0.0,
+   "p5": -7.0,
+   "p95": 9.0,
+   "min": -23.0,
+   "max": 62.0
+  },
+  "RSSI_not_above_RSRP_n": 135,
+  "deviation_limit_dB": 15.0,
+  "outlier_n": 11,
+  "outlier_rows": [
+   {
+    "Timestamp": "2026.10.02_12.16.21",
+    "Node": "914683",
+    "CellID": "10",
+    "Level": "-96",
+    "Qual": "-11",
+    "SNR": "18.0",
+    "LTERSSI": "-69"
+   },
+   {
+    "Timestamp": "2026.10.02_12.16.35",
+    "Node": "914683",
+    "CellID": "10",
+    "Level": "-105",
+    "Qual": "-12",
+    "SNR": "10.0",
+    "LTERSSI": "-87"
+   },
+   {
+    "Timestamp": "2026.10.02_12.16.59",
+    "Node": "80600",
+    "CellID": "9",
+    "Level": "-95",
+    "Qual": "-7",
+    "SNR": "11.0",
+    "LTERSSI": "-77"
+   },
+   {
+    "Timestamp": "2026.10.02_12.17.00",
+    "Node": "80600",
+    "CellID": "9",
+    "Level": "-95",
+    "Qual": "-7",
+    "SNR": "11.0",
+    "LTERSSI": "-77"
+   },
+   {
+    "Timestamp": "2026.10.02_12.17.01",
+    "Node": "80600",
+    "CellID": "9",
+    "Level": "-95",
+    "Qual": "-7",
+    "SNR": "11.0",
+    "LTERSSI": "-77"
+   },
+   {
+    "Timestamp": "2026.10.02_12.17.32",
+    "Node": "80609",
+    "CellID": "1",
+    "Level": "-84",
+    "Qual": "-12",
+    "SNR": "12.0",
+    "LTERSSI": "-67"
+   },
+   {
+    "Timestamp": "2026.10.02_12.24.21",
+    "Node": "82908",
+    "CellID": "5",
+    "Level": "-116",
+    "Qual": "-12",
+    "SNR": "8.0",
+    "LTERSSI": "-59"
+   },
+   {
+    "Timestamp": "2026.10.02_12.24.26",
+    "Node": "81289",
+    "CellID": "5",
+    "Level": "-121",
+    "Qual": "-16",
+    "SNR": "8.0",
+    "LTERSSI": "-59"
+   },
+   {
+    "Timestamp": "2026.10.02_12.34.11",
+    "Node": "947902",
+    "CellID": "7",
+    "Level": "-88",
+    "Qual": "-10",
+    "SNR": "21.0",
+    "LTERSSI": "-107"
+   },
+   {
+    "Timestamp": "2026.10.02_12.34.11",
+    "Node": "947902",
+    "CellID": "7",
+    "Level": "-88",
+    "Qual": "-10",
+    "SNR": "21.0",
+    "LTERSSI": "-107"
+   },
+   {
+    "Timestamp": "2026.10.02_12.34.13",
+    "Node": "947902",
+    "CellID": "7",
+    "Level": "-88",
+    "Qual": "-10",
+    "SNR": "21.0",
+    "LTERSSI": "-111"
+   }
+  ]
+ },
+ "sample_shares": {
+  "rat_label": {
+   "4G": {
+    "n": 206,
+    "pct": 48.2436
+   },
+   "5G": {
+    "n": 221,
+    "pct": 51.7564
+   }
+  },
+  "rat_label_unknown": {
+   "n": 0
+  },
+  "nr_mode": {
+   "label_5G_shown_as_NSA_per_schema_note_n": 221,
+   "NRSTATE_populated_n": 0,
+   "SA_or_NSA_verifiable_from_log": false
+  },
+  "lte_serving_or_anchor_band_all_records": {
+   "L7": {
+    "n": 282,
+    "pct": 66.0422
+   },
+   "L20": {
+    "n": 75,
+    "pct": 17.5644
+   },
+   "L3": {
+    "n": 70,
+    "pct": 16.3934
+   }
+  },
+  "lte_band_in_4G_records": {
+   "L7": {
+    "n": 150,
+    "pct": 72.8155
+   },
+   "L3": {
+    "n": 36,
+    "pct": 17.4757
+   },
+   "L20": {
+    "n": 20,
+    "pct": 9.7087
+   }
+  },
+  "lte_anchor_band_in_5G_records": {
+   "L7": {
+    "n": 132,
+    "pct": 59.7285
+   },
+   "L20": {
+    "n": 55,
+    "pct": 24.8869
+   },
+   "L3": {
+    "n": 34,
+    "pct": 15.3846
+   }
+  },
+  "arfcn_field": {
+   "2950": {
+    "n": 282,
+    "pct": 66.0422
+   },
+   "6350": {
+    "n": 75,
+    "pct": 17.5644
+   },
+   "1600": {
+    "n": 70,
+    "pct": 16.3934
+   }
+  },
+  "nr_band_in_5G_records": {
+   "unknown": {
+    "n": 221,
+    "pct": 100.0
+   }
+  },
+  "5G_records_with_serving_identity_fields_equal_to_LTE_anchor": {
+   "n": 220,
+   "of": 221
+  },
+  "CSI_fields_populated_n": 0,
+  "bandwidth_list_contains_100MHz": {
+   "5G_records": 142,
+   "4G_records": 88
+  },
+  "operator_code": {
+   "22610": {
+    "n": 224,
+    "pct": 52.459
+   },
+   "22601": {
+    "n": 203,
+    "pct": 47.541
+   }
+  },
+  "operator_name": {
+   "orange": {
+    "n": 427,
+    "pct": 100.0
+   }
+  },
+  "operator_code_by_label": {
+   "4G": {
+    "22610": 114,
+    "22601": 92
+   },
+   "5G": {
+    "22601": 111,
+    "22610": 110
+   }
+  },
+  "state": {
+   "I": {
+    "n": 271,
+    "pct": 63.466
+   },
+   "D": {
+    "n": 156,
+    "pct": 36.534
+   }
+  },
+  "state_D_pct_by_label": {
+   "4G": 21.8447,
+   "5G": 50.2262
+  },
+  "CA_true_pct_by_label": {
+   "4G": 30.0971,
+   "5G": 97.7376
+  },
+  "foreground": {
+   "true": {
+    "n": 275,
+    "pct": 64.4028
+   },
+   "false": {
+    "n": 152,
+    "pct": 35.5972
+   }
+  },
+  "nodes_total": 18,
+  "nodes_with_more_than_one_operator_code": 0,
+  "node_id_ranges_by_operator_code": {
+   "22601": [
+    914683,
+    964143,
+    10
+   ],
+   "22610": [
+    80559,
+    85878,
+    8
+   ]
+  }
+ },
+ "time_shares": {
+  "gap_rule": "zero-order hold to next record, capped at 10 s; excess = unobserved; last record weight 0",
+  "total_s": 1895.0,
+  "observed_s": 958.0,
+  "unobserved_s": 937.0,
+  "unobserved_pct": 49.4459,
+  "rat_label_pct_of_total": {
+   "4G": {
+    "s": 623.0,
+    "pct": 32.876
+   },
+   "5G": {
+    "s": 335.0,
+    "pct": 17.6781
+   }
+  },
+  "rat_label_pct_of_observed": {
+   "4G": {
+    "s": 623.0,
+    "pct": 65.0313
+   },
+   "5G": {
+    "s": 335.0,
+    "pct": 34.9687
+   }
+  },
+  "lte_band_pct_of_observed": {
+   "L20": {
+    "s": 66.0,
+    "pct": 6.8894
+   },
+   "L3": {
+    "s": 167.0,
+    "pct": 17.4322
+   },
+   "L7": {
+    "s": 725.0,
+    "pct": 75.6785
+   }
+  },
+  "operator_code_pct_of_observed": {
+   "22601": {
+    "s": 504.0,
+    "pct": 52.6096
+   },
+   "22610": {
+    "s": 454.0,
+    "pct": 47.3904
+   }
+  },
+  "uncapped_rat_label_pct_sensitivity": {
+   "4G": {
+    "s": 1518.0,
+    "pct": 80.1055
+   },
+   "5G": {
+    "s": 377.0,
+    "pct": 19.8945
+   }
+  }
+ },
+ "record_density": {
+  "first_background_record": "2026.10.02_12.20.49",
+  "records_before_first_background": 254,
+  "seconds_before_first_background": 271.0,
+  "records_from_first_background": 173,
+  "seconds_from_first_background": 1624.0,
+  "pct_records_before": 59.4848,
+  "pct_time_before": 14.3008,
+  "hold_s_foreground_true": 322.0,
+  "hold_s_foreground_false": 1573.0,
+  "median_gap_s_foreground_true": 1.0,
+  "median_gap_s_foreground_false": 2.0
+ },
+ "gps": {
+  "records": 427,
+  "non_numeric_or_out_of_range_or_0_0": 0,
+  "accuracy_m_min_median_max": [
+   1.0,
+   1.0,
+   23.0
+  ],
+  "accuracy_gt_limit_n": 0,
+  "accuracy_limit_m": 50.0,
+  "bbox_lon": [
+   21.202263,
+   21.320089
+  ],
+  "bbox_lat": [
+   45.758189,
+   45.807323
+  ],
+  "distinct_positions": 299,
+  "frozen_position_runs_ge_5_records": 5,
+  "longest_frozen_run": {
+   "records": 21,
+   "seconds": 398.0
+  },
+  "jump_rule": "distance/(gap+1 s) > 80 km/h while logged Speed <= 10 km/h at both records; all but the first record of the frozen run before the jump are stale",
+  "implied_speed_limit_kmh": 80.0,
+  "max_logged_speed_kmh": 71.0,
+  "jumps_over_limit": [
+   {
+    "from": "2026.10.02_12.27.07",
+    "to": "2026.10.02_12.28.07",
+    "gap_s": 60.0,
+    "distance_m": 3418.0,
+    "implied_kmh": 202.0,
+    "logged_speed_kmh_before_after": [
+     0.0,
+     2.0
+    ],
+    "frozen_run_start": "2026.10.02_12.20.29",
+    "frozen_run_records": 21,
+    "frozen_position": [
+     21.306733,
+     45.777278
+    ],
+    "foreground_false_in_run": 18
+   },
+   {
+    "from": "2026.10.02_12.33.32",
+    "to": "2026.10.02_12.33.37",
+    "gap_s": 5.0,
+    "distance_m": 1071.0,
+    "implied_kmh": 643.0,
+    "logged_speed_kmh_before_after": [
+     0.0,
+     1.0
+    ],
+    "frozen_run_start": "2026.10.02_12.31.40",
+    "frozen_run_records": 12,
+    "frozen_position": [
+     21.261181,
+     45.765826
+    ],
+    "foreground_false_in_run": 12
+   },
+   {
+    "from": "2026.10.02_12.35.44",
+    "to": "2026.10.02_12.35.55",
+    "gap_s": 11.0,
+    "distance_m": 278.0,
+    "implied_kmh": 83.0,
+    "logged_speed_kmh_before_after": [
+     0.0,
+     2.0
+    ],
+    "frozen_run_start": "2026.10.02_12.35.23",
+    "frozen_run_records": 4,
+    "frozen_position": [
+     21.239866,
+     45.760141
+    ],
+    "foreground_false_in_run": 4
+   },
+   {
+    "from": "2026.10.02_12.37.57",
+    "to": "2026.10.02_12.38.11",
+    "gap_s": 14.0,
+    "distance_m": 360.0,
+    "implied_kmh": 86.0,
+    "logged_speed_kmh_before_after": [
+     0.0,
+     9.0
+    ],
+    "frozen_run_start": "2026.10.02_12.37.08",
+    "frozen_run_records": 4,
+    "frozen_position": [
+     21.234142,
+     45.758189
+    ],
+    "foreground_false_in_run": 2
+   },
+   {
+    "from": "2026.10.02_12.42.42",
+    "to": "2026.10.02_12.43.17",
+    "gap_s": 35.0,
+    "distance_m": 1054.0,
+    "implied_kmh": 105.0,
+    "logged_speed_kmh_before_after": [
+     0.0,
+     1.0
+    ],
+    "frozen_run_start": "2026.10.02_12.38.11",
+    "frozen_run_records": 15,
+    "frozen_position": [
+     21.229868,
+     45.759445
+    ],
+    "foreground_false_in_run": 15
+   },
+   {
+    "from": "2026.10.02_12.47.24",
+    "to": "2026.10.02_12.47.42",
+    "gap_s": 18.0,
+    "distance_m": 732.0,
+    "implied_kmh": 139.0,
+    "logged_speed_kmh_before_after": [
+     0.0,
+     0.0
+    ],
+    "frozen_run_start": "2026.10.02_12.44.15",
+    "frozen_run_records": 13,
+    "frozen_position": [
+     21.211504,
+     45.762816
+    ],
+    "foreground_false_in_run": 13
+   }
+  ],
+  "stale_position_records_excluded_from_spatial_outputs": 63,
+  "valid_for_spatial_outputs_n": 364,
+  "speed_eq_0_records": 65,
+  "speed_eq_0_and_foreground_false": 64,
+  "sum_of_fix_to_fix_distance_km": 12.369,
+  "straight_line_first_to_last_km": 10.318
+ },
+ "active_tests": {
+  "download_n": 0,
+  "upload_n": 0,
+  "ping_n": 0,
+  "populated_cells_in_any_test_column": 0,
+  "throughput_stats": "N/A (no active-test interval)",
+  "rtt_stats": "N/A (no active-test interval)"
+ },
+ "passive_bitrate_not_throughput": {
+  "DL_kbps_gt0_n": 114,
+  "UL_kbps_gt0_n": 112,
+  "DL_kbps_max": 1458.0,
+  "DL_max_at": "2026.10.02_12.16.25",
+  "UL_kbps_max": 326.0,
+  "UL_max_at": "2026.10.02_12.34.06",
+  "DL_kbps_median_all": 0.0,
+  "state_D_n": 156
+ },
+ "other_fields": {
+  "CQI_missing_n": 137,
+  "CQI_eq_6_n": 73,
+  "TA_values": {
+   "0": 329,
+   "": 98
+  },
+  "LTERSSI_missing_n": 221,
+  "Level_eq_minus201_n": 0,
+  "always_empty_columns_of_interest": [
+   "Cellname",
+   "NRSTATE",
+   "CSI_RSRP",
+   "CSI_RSRQ",
+   "CSI_SNR",
+   "IMEI",
+   "IMSI",
+   "INFO",
+   "Test_Status",
+   "PINGAVG",
+   "PINGMIN",
+   "PINGMAX",
+   "PINGSTDEV",
+   "PINGLOSS",
+   "TESTDOWNLINK",
+   "TESTUPLINK",
+   "TESTDOWNLINKMAX",
+   "TESTUPLINKMAX"
+  ],
+  "constant_columns": {
+   "Distance": "-1",
+   "Bearing": "1000",
+   "Site_BEARING": "1000",
+   "AVGSPEED": "0",
+   "BATTERY": "41",
+   "NetworkTypeNum": "13",
+   "DataConnection_Info": "13",
+   "DEVICE": "samsung:SM-S901B:BP2A.250605.031.A3",
+   "VERSION_NAME": "33.8"
+  }
+ },
+ "mobility": {
+  "events_total": 79,
+  "events_by_type": {
+   "CELL_RESELECTION_4G4G": 49,
+   "HANDOVER_DATA_5G5G": 9,
+   "IRAT_CELL_RESELECTION_5G4G": 8,
+   "IRAT_HANDOVER_DATA_4G5G": 7,
+   "IRAT_CELL_RESELECTION_4G5G": 2,
+   "CELL_RESELECTION_5G5G": 2,
+   "HANDOVER_DATA_4G4G": 1,
+   "IRAT_HANDOVER_DATA_5G4G": 1
+  },
+  "handover_type_events": 18,
+  "reselection_type_events": 61,
+  "irat_type_events": 18,
+  "main_log_EVENT_non_empty": 80,
+  "main_log_LOG_START": 1,
+  "events_file_identical_to_main_log_EVENT_column": true,
+  "events_per_minute": 2.5013,
+  "source_target_same_node_and_cell_only_ARFCN_or_PCI_differs": {
+   "n": 3,
+   "events": [
+    [
+     "2026.10.02_12.19.22",
+     "HANDOVER_DATA_5G5G",
+     "226-10-14103-80609-3-2950-413:226-10-14103-80609-3-1600-413"
+    ],
+    [
+     "2026.10.02_12.20.08",
+     "CELL_RESELECTION_5G5G",
+     "226-01-14103-944552-1-1600-103:226-01-14103-944552-1-1600-288"
+    ],
+    [
+     "2026.10.02_12.31.38",
+     "IRAT_CELL_RESELECTION_5G4G",
+     "226-01-14103-964143-5-2950-81:226-01-14103-964143-5-2950-276"
+    ]
+   ]
+  },
+  "intra_node_events": 33,
+  "inter_node_events": 46,
+  "operator_code_changes_across_event": 36,
+  "tac_changes": 4,
+  "arfcn_changes": 18,
+  "event_chain_breaks_source_not_equal_previous_target": [],
+  "immediate_reversals_A_B_then_B_A": {
+   "n": 28,
+   "within_10s": 18,
+   "within_30s": 26,
+   "median_return_s": 6.5
+  },
+  "event_type_source_RAT_differs_from_label_of_previous_record": 17,
+  "event_type_target_RAT_differs_from_label_of_event_record": 0,
+  "rat_label_flips_in_main_log": 50,
+  "irat_type_events_with_same_label_before_and_at_event": 17,
+  "events_coinciding_with_a_label_flip": 1,
+  "events_logged_with_Speed_0": 52,
+  "events_logged_with_FOREGROUND_false": 60,
+  "events_logged_on_stale_position_records": 50,
+  "success_rate": "N/A (not observable from the handset)"
+ },
+ "label_5G_to_4G_changes": {
+  "n": 25,
+  "with_preceding_valid_NR_sample": 25,
+  "last_NR_RSRP_not_poor_ge_-110_n": 20,
+  "last_NR_RSRP_poor_lt_-110_n": 5,
+  "last_NR_SINR_poor_lt_0_n": 6,
+  "last_NR_RSRP_not_poor_and_SINR_not_poor_n": 18,
+  "last_NR_RSRP_median": -98.0,
+  "last_NR_SINR_median": 4.0,
+  "first_4G_record_state_I_n": 24,
+  "with_cell_change_n": 0
+ },
+ "nr_poor_segments_ge_3_consecutive_records": [
+  {
+   "from": "2026.10.02_12.19.17",
+   "to": "2026.10.02_12.19.19",
+   "records": 4,
+   "nr_rsrp_min": -114.0,
+   "nr_sinr_min": 0.0,
+   "anchor_rsrp_range": [
+    -114.0,
+    -103.0
+   ],
+   "anchor_snr_min": -19.0,
+   "lon_range": [
+    21.311355,
+    21.311596
+   ],
+   "lat_range": [
+    45.782457,
+    45.782732
+   ],
+   "gps_valid_records": 4,
+   "cells": [
+    "22601-944552-5",
+    "22610-80609-7"
+   ],
+   "state_D_records": 4
+  },
+  {
+   "from": "2026.10.02_12.19.22",
+   "to": "2026.10.02_12.19.25",
+   "records": 5,
+   "nr_rsrp_min": -117.0,
+   "nr_sinr_min": -5.0,
+   "anchor_rsrp_range": [
+    -114.0,
+    -98.0
+   ],
+   "anchor_snr_min": -3.0,
+   "lon_range": [
+    21.310657,
+    21.311011
+   ],
+   "lat_range": [
+    45.781668,
+    45.782058
+   ],
+   "gps_valid_records": 5,
+   "cells": [
+    "22610-80609-3"
+   ],
+   "state_D_records": 1
+  },
+  {
+   "from": "2026.10.02_12.19.55",
+   "to": "2026.10.02_12.20.04",
+   "records": 8,
+   "nr_rsrp_min": -114.0,
+   "nr_sinr_min": -2.0,
+   "anchor_rsrp_range": [
+    -98.0,
+    -92.0
+   ],
+   "anchor_snr_min": -7.0,
+   "lon_range": [
+    21.307375,
+    21.308059
+   ],
+   "lat_range": [
+    45.777952,
+    45.77869
+   ],
+   "gps_valid_records": 8,
+   "cells": [
+    "22601-944552-1",
+    "22610-82039-2"
+   ],
+   "state_D_records": 6
+  },
+  {
+   "from": "2026.10.02_12.20.08",
+   "to": "2026.10.02_12.20.29",
+   "records": 6,
+   "nr_rsrp_min": -117.0,
+   "nr_sinr_min": -6.0,
+   "anchor_rsrp_range": [
+    -100.0,
+    -95.0
+   ],
+   "anchor_snr_min": -2.0,
+   "lon_range": [
+    21.306733,
+    21.307239
+   ],
+   "lat_range": [
+    45.777278,
+    45.777813
+   ],
+   "gps_valid_records": 6,
+   "cells": [
+    "22601-944552-1"
+   ],
+   "state_D_records": 2
+  },
+  {
+   "from": "2026.10.02_12.34.05",
+   "to": "2026.10.02_12.34.10",
+   "records": 6,
+   "nr_rsrp_min": -115.0,
+   "nr_sinr_min": -6.0,
+   "anchor_rsrp_range": [
+    -106.0,
+    -88.0
+   ],
+   "anchor_snr_min": -6.0,
+   "lon_range": [
+    21.244404,
+    21.245122
+   ],
+   "lat_range": [
+    45.761706,
+    45.76194
+   ],
+   "gps_valid_records": 6,
+   "cells": [
+    "22601-947902-7"
+   ],
+   "state_D_records": 4
+  }
+ ],
+ "nr_poor_windows_segments_merged_within_60s": [
+  {
+   "from": "2026.10.02_12.19.17",
+   "to": "2026.10.02_12.20.29",
+   "records": 58,
+   "5G_records": 39,
+   "nr_rsrp_median": -112.0,
+   "nr_rsrp_min": -117.0,
+   "nr_rsrp_poor_pct": 53.8462,
+   "nr_sinr_median": 0.0,
+   "nr_sinr_poor_pct": 18.4211,
+   "lte_rsrp_median_pooled": -97.0,
+   "lte_rsrp_min_pooled": -114.0,
+   "lte_sinr_median_pooled": 2.0,
+   "lte_sinr_poor_pct_pooled": 27.5862,
+   "events_in_window": 8,
+   "operator_codes": [
+    "22601",
+    "22610"
+   ],
+   "cells": [
+    "22601-944552-1",
+    "22601-944552-5",
+    "22610-80609-3",
+    "22610-80609-7",
+    "22610-82039-2"
+   ],
+   "lon_range": [
+    21.306733,
+    21.311596
+   ],
+   "lat_range": [
+    45.777278,
+    45.782732
+   ],
+   "gps_valid_records": 58,
+   "state_D_records": 23,
+   "DL_kbps_max": 55.0,
+   "speed_kmh_range": [
+    8.0,
+    64.0
+   ]
+  },
+  {
+   "from": "2026.10.02_12.34.05",
+   "to": "2026.10.02_12.34.10",
+   "records": 6,
+   "5G_records": 6,
+   "nr_rsrp_median": -113.0,
+   "nr_rsrp_min": -115.0,
+   "nr_rsrp_poor_pct": 100.0,
+   "nr_sinr_median": -4.0,
+   "nr_sinr_poor_pct": 100.0,
+   "lte_rsrp_median_pooled": -106.0,
+   "lte_rsrp_min_pooled": -106.0,
+   "lte_sinr_median_pooled": 0.0,
+   "lte_sinr_poor_pct_pooled": 50.0,
+   "events_in_window": 0,
+   "operator_codes": [
+    "22601"
+   ],
+   "cells": [
+    "22601-947902-7"
+   ],
+   "lon_range": [
+    21.244404,
+    21.245122
+   ],
+   "lat_range": [
+    45.761706,
+    45.76194
+   ],
+   "gps_valid_records": 6,
+   "state_D_records": 4,
+   "DL_kbps_max": 36.0,
+   "speed_kmh_range": [
+    39.0,
+    44.0
+   ]
+  }
+ ],
+ "relationships": {
+  "NR_RSRP_vs_NR_SINR": {
+   "n": 214,
+   "pearson": 0.705,
+   "spearman": 0.724
+  },
+  "NR_RSRP_vs_NR_RSRQ": {
+   "n": 221,
+   "pearson": 0.724,
+   "spearman": 0.727
+  },
+  "NR_RSRQ_vs_NR_SINR": {
+   "n": 214,
+   "pearson": 0.868,
+   "spearman": 0.94
+  },
+  "LTE_RSRP_vs_LTE_SINR_pooled": {
+   "n": 426,
+   "pearson": 0.51,
+   "spearman": 0.516
+  },
+  "LTE_RSRP_vs_LTE_RSRQ_pooled": {
+   "n": 426,
+   "pearson": 0.653,
+   "spearman": 0.636
+  },
+  "LTE_RSRQ_vs_LTE_SINR_pooled": {
+   "n": 426,
+   "pearson": 0.637,
+   "spearman": 0.684
+  },
+  "NR_RSRP_vs_anchor_LTE_RSRP_same_record": {
+   "n": 220,
+   "pearson": 0.594,
+   "spearman": 0.611
+  },
+  "NR_SINR_vs_anchor_LTE_SNR_same_record": {
+   "n": 214,
+   "pearson": 0.434,
+   "spearman": 0.452
+  },
+  "NR_RSRP_vs_passive_DL_kbps_state_D_only": {
+   "n": 111,
+   "pearson": 0.047,
+   "spearman": -0.03
+  },
+  "note": "records are sample-and-hold and unevenly spaced; coefficients are descriptive, no significance test",
+  "NR_minus_anchor_RSRP_dB": {
+   "n": 220,
+   "mean": -6.75,
+   "median": -6.0
+  },
+  "NR_poor_RSRP_and_poor_SINR_overlap": {
+   "nr_rsrp_poor_n": 31,
+   "of_which_sinr_poor_n": 15,
+   "of_which_sinr_le_0_n": 22,
+   "nr_rsrp_not_poor_with_sinr_poor_n": 11
+  }
+ },
+ "narrative_word_count_whitespace_split": 396
+}

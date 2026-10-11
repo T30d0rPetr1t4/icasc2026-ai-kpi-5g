@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite the paper. The reference will be updated with pages and DOI after publication."
+title: "AI-assisted KPI evaluation of a live 5G network: data, code and figures"
+license:
+  - MIT
+  - CC-BY-4.0
+authors:
+  - family-names: Furdui
+    given-names: Tudor-Gabriel
+    affiliation: "Politehnica University of Timișoara"
+  - family-names: Petrița
+    given-names: Teodor
+    affiliation: "Politehnica University of Timișoara"
+preferred-citation:
+  type: conference-paper
+  title: "AI-Assisted KPI Evaluation of a Live 5G Network: A Drive-Test Study on Romanian Mobile Operators"
+  authors:
+    - family-names: Furdui
+      given-names: Tudor-Gabriel
+    - family-names: Petrița
+      given-names: Teodor
+  collection-title: "Proceedings of the International Conference on Advanced Scientific Computing (ICASC 2026)"
+  conference:
+    name: "International Conference on Advanced Scientific Computing (ICASC 2026)"
+    city: Cluj-Napoca
+    country: RO
+    date-start: 2026-10-21
+    date-end: 2026-10-23
+    website: "https://www.itim-cj.ro/icasc/"
+  status: in-press
+  year: 2026
+  notes: "To appear. Pages and DOI will be added after publication."
+  url: "https://www.itim-cj.ro/icasc/"

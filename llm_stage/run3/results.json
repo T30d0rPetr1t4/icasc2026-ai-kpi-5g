@@ -1,0 +1,153 @@
+{
+ "records": 427,
+ "duration_s": 1895.0,
+ "rat_label_records": {
+  "4G": 206,
+  "5G": 221
+ },
+ "serving_cell_operator_code_records": {
+  "22610": 224,
+  "22601": 203
+ },
+ "kpi": {
+  "NR_SS_RSRP": {
+   "valid_n": 221,
+   "mean": -99.067873,
+   "median": -98.0,
+   "sd": 9.566509,
+   "p5": -114.0,
+   "p95": -85.0,
+   "poor_pct": 14.027149
+  },
+  "NR_SS_RSRQ": {
+   "valid_n": 221,
+   "mean": -12.420814,
+   "median": -12.0,
+   "sd": 1.791221,
+   "p5": -16.0,
+   "p95": -10.0,
+   "poor_pct": null
+  },
+  "NR_SS_SINR": {
+   "valid_n": 214,
+   "mean": 5.275701,
+   "median": 4.5,
+   "sd": 6.147916,
+   "p5": -3.0,
+   "p95": 17.0,
+   "poor_pct": 12.149533
+  },
+  "LTE_RSRP": {
+   "valid_n": 426,
+   "mean": -92.84507,
+   "median": -95.0,
+   "sd": 10.975457,
+   "p5": -109.0,
+   "p95": -71.0,
+   "poor_pct": 1.643192
+  },
+  "LTE_RSRQ": {
+   "valid_n": 426,
+   "mean": -12.096244,
+   "median": -12.0,
+   "sd": 3.11318,
+   "p5": -17.0,
+   "p95": -7.0,
+   "poor_pct": null
+  },
+  "LTE_SINR": {
+   "valid_n": 426,
+   "mean": 4.976526,
+   "median": 4.0,
+   "sd": 6.836539,
+   "p5": -6.0,
+   "p95": 17.0,
+   "poor_pct": 13.380282
+  }
+ },
+ "active_tests": {
+  "download_n": 0,
+  "upload_n": 0,
+  "ping_n": 0
+ },
+ "mobility": {
+  "events_total": 79,
+  "events_by_type": {
+   "CELL_RESELECTION_4G4G": 49,
+   "HANDOVER_DATA_5G5G": 9,
+   "IRAT_CELL_RESELECTION_5G4G": 8,
+   "IRAT_HANDOVER_DATA_4G5G": 7,
+   "IRAT_CELL_RESELECTION_4G5G": 2,
+   "CELL_RESELECTION_5G5G": 2,
+   "HANDOVER_DATA_4G4G": 1,
+   "IRAT_HANDOVER_DATA_5G4G": 1
+  }
+ },
+ "data_quality_findings": [
+  "427 data records, header has 271 columns; rows carry 91 to 151 fields, none longer than the header.",
+  "Timestamps: all 427 parse as YYYY.MM.DD_HH.MM.SS, non-decreasing, 1 s resolution; 74 records share the timestamp of the previous record; no exact duplicate rows.",
+  "Sampling is irregular: 43 inter-record gaps exceed 10 s (longest 93 s), 39 of them opened by a record with FOREGROUND=false (152 such records).",
+  "Level and Qual are numeric in all 427 records; no -201 loss-of-coverage code and no out-of-range RSRP/RSRQ/SINR value.",
+  "SNR is '-' in 7 records, all labelled 5G (NR_SS_SINR valid N 214 of 221).",
+  "SecondCell_* (LTE anchor) is empty in 1 record labelled 5G (LTE KPIs valid N 426 of 427) and filled in 1 record labelled 4G (not pooled, to avoid double counting).",
+  "The 7 5G records with missing SNR duplicate LTE values in Level/Qual; kept in NR_SS_RSRP/RSRQ per schema; excluding them moves the NR_SS_RSRP mean from -99.07 to -99.44 dBm and poor share from 14.03 to 14.49 %.",
+  "12 of 25 4G-to-5G label changes show the last 4G record with the Level/Qual of the next 5G record; excluding them moves the LTE_RSRP mean from -92.85 to -92.75 dBm.",
+  "Readings are refreshed more slowly than records are written: 44.1 % of consecutive 5G records repeat the same Level/Qual/SNR triple (37.0 % for 4G records, 46.2 % for anchor values); samples are not independent.",
+  "GPS: all 427 coordinates are well-formed (Accuracy 1 to 23 m), but 63 records lie in 6 frozen-position runs and are excluded from location statements only.",
+  "Speed is consistent with km/h (median difference to GPS-derived speed 0.4 km/h over 229 steps).",
+  "No active test was run: Test_Status, PING* and TESTDOWNLINK/TESTUPLINK are empty in all 427 records; throughput and RTT are N/A. DL_bitrate/UL_bitrate are passive counters (non-zero in 114/112 records).",
+  "CSI_RSRP/CSI_RSRQ/CSI_SNR and NRSTATE are empty in all records; no NR-ARFCN or NR band field is populated: ARFCN/BAND hold the LTE carrier (equal to SecondCell_ARFCN in 220 of 221 5G records).",
+  "LTERSSI is quantised in 2 dB steps (all 206 values odd) and is not above RSRP in 135 of 206 4G records, which is not consistent with a wideband RSSI; not used.",
+  "Distance=-1, Bearing=1000, Site_BEARING=1000, AVGSPEED=0, TA=0 or empty, Cellname/IMEI/IMSI empty: placeholders, no site database; not used.",
+  "NetworkTypeNum is 13 in all 427 records, including those labelled 5G; the field is not described in the schema note and is not interpreted here.",
+  "Events file (79 events) is identical in timestamp, type and details to the EVENT column of the main log (plus one LOG START)."
+ ],
+ "anomaly_candidates": [
+  {
+   "when": "2026.10.02_12.19.13 to 2026.10.02_12.20.29",
+   "what": "Sustained weak NR SS-RSRP/SS-SINR while the LTE anchor is also weak and the serving cell alternates between operator codes 22610 and 22601 (observation; cause not established).",
+   "evidence": "44 NR samples: SS-RSRP median -110 dBm, min -117; 21 below -110 dBm; SS-SINR median 0 dB, min -6; anchor RSRP min -114 dBm, anchor SNR min -19 dB (at 2026.10.02_12.19.17); 9 mobility events, 5 between operator codes; from 45.78329N 21.31208E to 45.77728N 21.30673E; Speed 64 -> 8 km/h."
+  },
+  {
+   "when": "2026.10.02_12.34.03 to 2026.10.02_12.34.18",
+   "what": "NR quality drops after the serving cell changes to 22601 node 947902 cell 7; label then falls back to 4G for 5 records and returns to 5G (observation).",
+   "evidence": "14 NR samples: SS-RSRP min -115 dBm (6 below -110), SS-SINR min -6 dB (10 below 0); anchor RSRP min -109 dBm; passive UL_bitrate up to 326 kbps; from 45.76207N 21.24551E to 45.76133N 21.24332E."
+  },
+  {
+   "when": "2026.10.02_12.16.31, 2026.10.02_12.16.39, 2026.10.02_12.17.22, 2026.10.02_12.17.42, 2026.10.02_12.18.14, 2026.10.02_12.19.25, 2026.10.02_12.37.02",
+   "what": "Records labelled 5G with missing SNR whose Level/Qual duplicate LTE values (label/field race at the 5G-to-4G label change); their Level/Qual are probably LTE, not NR (hypothesis).",
+   "evidence": "7 records with SNR='-'; in 6 Level==SecondCell_RSRP and Qual==SecondCell_RSRQ; in the remaining 1 SecondCell is empty and Level/Qual equal the next 4G record; no other 5G record has both equalities (6 in total)."
+  },
+  {
+   "when": "2026.10.02_12.16.21, 2026.10.02_12.16.35, 2026.10.02_12.16.43, 2026.10.02_12.17.02, 2026.10.02_12.17.32, 2026.10.02_12.17.53, 2026.10.02_12.18.27, 2026.10.02_12.31.40, 2026.10.02_12.33.53, 2026.10.02_12.34.14, 2026.10.02_12.35.11, 2026.10.02_12.37.03",
+   "what": "Last 4G-labelled record before a 5G label already carries the Level/Qual of the following 5G record (possible NR values under a 4G label, or stale LTE values under a 5G label; undecidable from the log).",
+   "evidence": "12 of 25 4G-to-5G label changes; one 4G record (2026.10.02_12.18.27) even has SecondCell_* filled."
+  },
+  {
+   "when": "2026.10.02_12.20.29 to 2026.10.02_12.27.07; 2026.10.02_12.31.40 to 2026.10.02_12.33.32; 2026.10.02_12.35.23 to 2026.10.02_12.35.44; 2026.10.02_12.37.08 to 2026.10.02_12.37.57; 2026.10.02_12.38.11 to 2026.10.02_12.42.42; 2026.10.02_12.44.15 to 2026.10.02_12.47.24",
+   "what": "GPS position frozen while cell changes continue; fix resumes with a jump that implies an impossible speed.",
+   "evidence": "held 398 s then 3418 m in 60 s = 205 km/h; held 112 s then 1072 m in 5 s = 772 km/h; held 21 s then 278 m in 11 s = 91 km/h; held 49 s then 360 m in 14 s = 92 km/h; held 271 s then 1054 m in 35 s = 108 km/h; held 189 s then 732 m in 18 s = 146 km/h; 63 records flagged; FOREGROUND=false in 60 of them."
+  },
+  {
+   "when": "2026.10.02_12.16.18 to 2026.10.02_12.47.53",
+   "what": "Serving-cell operator code alternates between 22610 and 22601 although Operatorname is always 'orange'.",
+   "evidence": "22610 in 224 records, 22601 in 203; 36 of 79 mobility events change the operator code; 28 immediate A-B-A returns, 18 within 10 s."
+  },
+  {
+   "when": "2026.10.02_12.24.21, 2026.10.02_12.24.26",
+   "what": "Very low LTE RSRP (including the log minimum) while LTERSSI is at its log maximum and SNR is positive: internally inconsistent reading, candidate stale or mis-reported field (position frozen at the time).",
+   "evidence": "Level -116 dBm, LTERSSI -59 dBm, SNR 8.0 dB, node 82908 cell 5; Level -121 dBm, LTERSSI -59 dBm, SNR 8.0 dB, node 81289 cell 5"
+  },
+  {
+   "when": "22601-944552-1 PSC=103: 12.20.07; 22601-964143-5 PSC=81: 12.31.33; 22610-80609-3 ARFCN=2950: 12.19.20, 12.19.21, 12.19.22",
+   "what": "Cell identity fields change asynchronously: same (operator code, node, cell) appears with two EARFCNs or two PCIs.",
+   "evidence": "22601-944552-1: ARFCN ['1600'], PCI ['103', '288']; 22601-964143-5: ARFCN ['2950'], PCI ['276', '81']; 22610-80609-3: ARFCN ['1600', '2950'], PCI ['413']; 3 events have identical source and target cell identity."
+  },
+  {
+   "when": "2026.10.02_12.47.53",
+   "what": "Lowest NR SS-RSRP of the log in the final record while the LTE anchor is good and traffic is flowing.",
+   "evidence": "Level -121 dBm, Qual -16 dB, SNR -4.0 dB; anchor RSRP -96 dBm, anchor SNR 13.0 dB; DL_bitrate 111 kbps; 45.76414N 21.20226E."
+  }
+ ],
+ "model_self_report": "claude-opus-5-5"
+}

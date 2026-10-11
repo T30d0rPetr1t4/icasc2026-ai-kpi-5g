@@ -1,0 +1,119 @@
+{
+ "file": "orange_2026.06.09_09.03.11.txt",
+ "audit": {
+  "records": 2365,
+  "header_fields": 270,
+  "rows_longer_than_header": 89,
+  "first_timestamp": "2026.06.09_09.03.11",
+  "last_timestamp": "2026.06.09_08.41.34",
+  "timestamp_backward_steps": 1,
+  "largest_backward_step_s": -3599.0,
+  "duration_s_first_to_last": -1297.0,
+  "dt_median_s": 1.0,
+  "dt_mean_s": -0.55,
+  "dt_max_s": 46.0,
+  "dt_gt_gap_rule_n": 2,
+  "device": [
+   "HMD Global:Nokia X30 5G:UKQ1.231003.002"
+  ],
+  "app_version": [
+   "33.3"
+  ],
+  "operator_names": {
+   "orange": 1417,
+   "Yettel_HU": 854,
+   "22610": 65,
+   "21601": 24,
+   "21630": 5
+  },
+  "operator_codes": {
+   "22610": 1477,
+   "21630": 587,
+   "21601": 296,
+   "21474836472147483647": 5
+  },
+  "rat_labels": {
+   "4G": 1862,
+   "5G": 374,
+   "2G": 129
+  },
+  "band_labels": {
+   "L3": 1023,
+   "L20": 758,
+   "N78": 176,
+   "N1": 146,
+   "PGSM": 118,
+   "L7": 100,
+   "N48": 14,
+   "L1": 13,
+   "EGSM": 11,
+   "L8": 6
+  },
+  "arfcn": {
+   "1600": 936,
+   "6350": 758,
+   "647328": 176,
+   "430090": 138,
+   "2950": 100,
+   "1850": 87,
+   "91": 42,
+   "80": 36,
+   "116": 31,
+   "637440": 14,
+   "300": 13,
+   "0": 11,
+   "76": 9,
+   "3550": 6,
+   "429170": 5,
+   "427010": 3
+  },
+  "level_out_of_range_n": 0,
+  "level_out_of_range_values": [],
+  "operator_code_invalid_n": 5,
+  "snr_missing_marker_n": 166,
+  "snr_blank_n": 0,
+  "qual_missing_n": 0,
+  "active_test_rows": {
+   "PING": 22,
+   "UPLOAD": 21,
+   "DOWNLOAD": 21
+  },
+  "ping_rows_n": 1,
+  "dl_test_rows_n": 1,
+  "csi_rsrp_populated_n": 0,
+  "android_network_type_codes": {
+   "13": 2219,
+   "1": 66,
+   "2": 61,
+   "20": 19
+  },
+  "nrstate_populated_n": 0,
+  "app_not_foreground_n": 1039,
+  "distinct_positions": 2190,
+  "position_discontinuities_gt100m": 0,
+  "largest_discontinuity_m": 40.0,
+  "stale_position_records": 0,
+  "stale_position_seconds": 0.0,
+  "longest_stale_run_s": 0.0,
+  "path_m_tracked_steps_le100m": 73911.0,
+  "path_m_all_steps_chained": 73911.0,
+  "label_transition_5G_records_without_SNR": 37,
+  "label_transition_5G_records_without_SNR_equal_to_anchor": 1,
+  "label_transition_4G_records_before_5G": 21,
+  "label_transition_4G_records_before_5G_carrying_NR_values": 11,
+  "held_triplet_pct": {
+   "5G": 87.4,
+   "4G": 53.9
+  },
+  "bbox": {
+   "lat_min": 46.193756,
+   "lat_max": 46.297821,
+   "lon_min": 20.166895,
+   "lon_max": 21.092019
+  },
+  "speed_kmh": {
+   "median": 126.0,
+   "max": 145.0
+  }
+ }
+}

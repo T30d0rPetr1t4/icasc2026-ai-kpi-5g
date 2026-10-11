@@ -1,0 +1,98 @@
+{
+ "file": "eir_2026.06.12_16.27.29.txt",
+ "audit": {
+  "records": 108,
+  "header_fields": 270,
+  "rows_longer_than_header": 0,
+  "first_timestamp": "2026.06.12_16.27.31",
+  "last_timestamp": "2026.06.12_15.37.59",
+  "timestamp_backward_steps": 1,
+  "largest_backward_step_s": -3586.0,
+  "duration_s_first_to_last": -2972.0,
+  "dt_median_s": 2.0,
+  "dt_mean_s": -27.78,
+  "dt_max_s": 85.0,
+  "dt_gt_gap_rule_n": 4,
+  "device": [
+   "HMD Global:Nokia X30 5G:UKQ1.231003.002"
+  ],
+  "app_version": [
+   "33.3"
+  ],
+  "operator_names": {
+   "eir": 107,
+   "27203": 1
+  },
+  "operator_codes": {
+   "27203": 108
+  },
+  "rat_labels": {
+   "5G": 86,
+   "4G": 14,
+   "3G": 8
+  },
+  "band_labels": {
+   "N48": 83,
+   "L1": 17,
+   "U8": 6,
+   "": 2
+  },
+  "arfcn": {
+   "643968": 83,
+   "500": 19,
+   "2962": 6
+  },
+  "level_out_of_range_n": 2,
+  "level_out_of_range_values": [
+   -200
+  ],
+  "operator_code_invalid_n": 0,
+  "snr_missing_marker_n": 57,
+  "snr_blank_n": 0,
+  "qual_missing_n": 8,
+  "active_test_rows": {
+   "PING": 13,
+   "UPLOAD": 12,
+   "DOWNLOAD": 11,
+   "VOICE SEQUENCE": 9
+  },
+  "ping_rows_n": 1,
+  "dl_test_rows_n": 1,
+  "csi_rsrp_populated_n": 0,
+  "android_network_type_codes": {
+   "13": 92,
+   "20": 8,
+   "15": 5,
+   "10": 2,
+   "3": 1
+  },
+  "nrstate_populated_n": 0,
+  "app_not_foreground_n": 83,
+  "distinct_positions": 29,
+  "position_discontinuities_gt100m": 0,
+  "largest_discontinuity_m": 11.0,
+  "stale_position_records": 0,
+  "stale_position_seconds": 0.0,
+  "longest_stale_run_s": 0.0,
+  "path_m_tracked_steps_le100m": 294.0,
+  "path_m_all_steps_chained": 294.0,
+  "label_transition_5G_records_without_SNR": 49,
+  "label_transition_5G_records_without_SNR_equal_to_anchor": 0,
+  "label_transition_4G_records_before_5G": 8,
+  "label_transition_4G_records_before_5G_carrying_NR_values": 0,
+  "held_triplet_pct": {
+   "5G": 80.2,
+   "4G": 7.1
+  },
+  "bbox": {
+   "lat_min": 53.34024,
+   "lat_max": 53.342632,
+   "lon_min": -6.270378,
+   "lon_max": -6.269824
+  },
+  "speed_kmh": {
+   "median": 3.0,
+   "max": 6.0
+  }
+ }
+}

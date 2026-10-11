@@ -1,0 +1,91 @@
+{
+ "file": "Orange_2026.07.26_13.47.11.txt",
+ "audit": {
+  "records": 95,
+  "header_fields": 270,
+  "rows_longer_than_header": 0,
+  "first_timestamp": "2026.07.26_13.47.11",
+  "last_timestamp": "2026.07.26_14.23.54",
+  "timestamp_backward_steps": 0,
+  "largest_backward_step_s": 0.0,
+  "duration_s_first_to_last": 2203.0,
+  "dt_median_s": 10.0,
+  "dt_mean_s": 23.44,
+  "dt_max_s": 246.0,
+  "dt_gt_gap_rule_n": 25,
+  "device": [
+   "samsung:SM-S901B:BP2A.250605.031.A3"
+  ],
+  "app_version": [
+   "33.3"
+  ],
+  "operator_names": {
+   "Orange": 95
+  },
+  "operator_codes": {
+   "26002": 57,
+   "26003": 37,
+   "26006": 1
+  },
+  "rat_labels": {
+   "4G": 95
+  },
+  "band_labels": {
+   "L1": 31,
+   "L7": 20,
+   "L8": 17,
+   "L3": 15,
+   "L20": 12
+  },
+  "arfcn": {
+   "75": 31,
+   "3025": 20,
+   "3764": 17,
+   "1725": 15,
+   "6200": 12
+  },
+  "level_out_of_range_n": 3,
+  "level_out_of_range_values": [
+   -340
+  ],
+  "operator_code_invalid_n": 0,
+  "snr_missing_marker_n": 0,
+  "snr_blank_n": 0,
+  "qual_missing_n": 1,
+  "active_test_rows": {},
+  "ping_rows_n": 0,
+  "dl_test_rows_n": 0,
+  "csi_rsrp_populated_n": 0,
+  "android_network_type_codes": {
+   "13": 95
+  },
+  "nrstate_populated_n": 0,
+  "app_not_foreground_n": 92,
+  "distinct_positions": 3,
+  "position_discontinuities_gt100m": 1,
+  "largest_discontinuity_m": 8113.0,
+  "stale_position_records": 93,
+  "stale_position_seconds": 2193.0,
+  "longest_stale_run_s": 2193.0,
+  "path_m_tracked_steps_le100m": 2.0,
+  "path_m_all_steps_chained": 8115.0,
+  "label_transition_5G_records_without_SNR": 0,
+  "label_transition_5G_records_without_SNR_equal_to_anchor": 0,
+  "label_transition_4G_records_before_5G": 0,
+  "label_transition_4G_records_before_5G_carrying_NR_values": 0,
+  "held_triplet_pct": {
+   "5G": null,
+   "4G": 4.2
+  },
+  "bbox": {
+   "lat_min": 54.404084,
+   "lat_max": 54.409375,
+   "lon_min": 18.561247,
+   "lon_max": 18.686274
+  },
+  "speed_kmh": {
+   "median": 0.0,
+   "max": 0.0
+  }
+ }
+}

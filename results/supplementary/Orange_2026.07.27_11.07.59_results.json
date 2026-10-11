@@ -1,0 +1,88 @@
+{
+ "file": "Orange_2026.07.27_11.07.59.txt",
+ "audit": {
+  "records": 152,
+  "header_fields": 270,
+  "rows_longer_than_header": 0,
+  "first_timestamp": "2026.07.27_11.08.00",
+  "last_timestamp": "2026.07.27_11.34.00",
+  "timestamp_backward_steps": 0,
+  "largest_backward_step_s": 0.0,
+  "duration_s_first_to_last": 1560.0,
+  "dt_median_s": 2.0,
+  "dt_mean_s": 10.33,
+  "dt_max_s": 132.0,
+  "dt_gt_gap_rule_n": 14,
+  "device": [
+   "samsung:SM-S901B:BP2A.250605.031.A3"
+  ],
+  "app_version": [
+   "33.3"
+  ],
+  "operator_names": {
+   "Orange": 152
+  },
+  "operator_codes": {
+   "26003": 91,
+   "26002": 61
+  },
+  "rat_labels": {
+   "4G": 152
+  },
+  "band_labels": {
+   "L1": 105,
+   "L7": 33,
+   "L3": 8,
+   "L8": 3,
+   "L20": 3
+  },
+  "arfcn": {
+   "75": 105,
+   "3025": 33,
+   "1725": 8,
+   "3764": 3,
+   "6200": 3
+  },
+  "level_out_of_range_n": 0,
+  "level_out_of_range_values": [],
+  "operator_code_invalid_n": 0,
+  "snr_missing_marker_n": 0,
+  "snr_blank_n": 0,
+  "qual_missing_n": 0,
+  "active_test_rows": {},
+  "ping_rows_n": 0,
+  "dl_test_rows_n": 0,
+  "csi_rsrp_populated_n": 0,
+  "android_network_type_codes": {
+   "13": 152
+  },
+  "nrstate_populated_n": 0,
+  "app_not_foreground_n": 151,
+  "distinct_positions": 80,
+  "position_discontinuities_gt100m": 4,
+  "largest_discontinuity_m": 5941.0,
+  "stale_position_records": 57,
+  "stale_position_seconds": 1155.0,
+  "longest_stale_run_s": 600.0,
+  "path_m_tracked_steps_le100m": 1020.0,
+  "path_m_all_steps_chained": 9732.0,
+  "label_transition_5G_records_without_SNR": 0,
+  "label_transition_5G_records_without_SNR_equal_to_anchor": 0,
+  "label_transition_4G_records_before_5G": 0,
+  "label_transition_4G_records_before_5G_carrying_NR_values": 0,
+  "held_triplet_pct": {
+   "5G": null,
+   "4G": 23.7
+  },
+  "bbox": {
+   "lat_min": 54.374257,
+   "lat_max": 54.397911,
+   "lon_min": 18.463561,
+   "lon_max": 18.575767
+  },
+  "speed_kmh": {
+   "median": 22.5,
+   "max": 48.0
+  }
+ }
+}

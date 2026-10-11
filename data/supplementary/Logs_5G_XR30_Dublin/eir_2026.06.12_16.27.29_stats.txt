@@ -1,0 +1,5 @@
+Event	Stats
+Voice Calls	2
+Successful Calls	0
+Blocked Calls	0
+Dropped Calls	2
